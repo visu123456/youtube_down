@@ -1,3 +1,9 @@
+function hi(){
+	console.log('this is user for fetch data')
+	const response = await axios.get(`${BASE_URL}/todos?_limit=5`);
+    const todoItems = response.data;
+    console.log(`GET: Here's the list of todos`, todoItems);
+}
 function vi()
 {	
 	
