@@ -4,6 +4,15 @@ function hi(){
     const todoItems = response.data;
     console.log(`GET: Here's the list of todos`, todoItems);
 }
+
+
+function kano(){
+	
+    const response = await axios.get(`${money_heist}/todos?_limit=5`);
+    const todoItems = response.data;
+    console.log(`GET: Here's the list of tp be done `, todoItems);
+}
+
 function vi()
 {	
 	
